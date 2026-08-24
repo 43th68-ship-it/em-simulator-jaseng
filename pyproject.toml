@@ -1,0 +1,26 @@
+[project]
+name = "em-simulator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "최지원", email = "43th68@djshs.djsch.kr" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "plotly>=6.9.0",
+    "scipy>=1.18.1",
+    "sympy>=1.14.0",
+    "vpython>=7.6.5",
+]
+
+[project.scripts]
+em-simulator = "em_simulator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
